@@ -14,9 +14,9 @@ function TwoD() {
     row: { rows: [] },
   });
 
-  const [search, setSearch] = useState([{}]);
-  const [text, setText] = useState([]);
-  const [render, setRender] = useState(false);
+  const [search, setSearch] = useState([]);
+  const [text, setText] = useState("grey");
+ 
 
   function handleChange(e) {
     setHome({ ...home, [e.target.name]: e.target.value });
@@ -46,15 +46,12 @@ function TwoD() {
   }
 
   function searchText(e) {
-    setSearch([e.target.value]);
+    setSearch({...search,[e.target.name]:e.target.name});
     console.log(search);
-    if (search !== "") {
-      setText(state.filter((name) => name.temp.includes(search)));
-      setRender(!render);
-    } else {
-      setText(state);
+
+    if(search.text===state.text){
+      setText("marron")
     }
-    setRender(true);
   }
 
   return (
@@ -89,6 +86,7 @@ function TwoD() {
           <input
             className="form-control"
             type="text"
+            style={{color:"red"}}
             onChange={searchText}
             placeholder="Search"
             aria-label="Search"

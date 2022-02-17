@@ -76,7 +76,7 @@ function TwoD() {
           />
         </div>
         <div className="p-4">
-          <button type="submit" className="btn btn-success" onClick={submit}>
+          <button type="submit" className="btn btn-danger" onClick={submit}>
             Submit
           </button>
         </div>

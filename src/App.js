@@ -4,7 +4,7 @@ import TwoD from "./components/TwoD";
 function App() {
   return (
     <div className="App">
-      <h1>Mobigic Project</h1>
+      <h2 style={{marginTop:"20px"}}>Mobigic Project</h2>
       <TwoD />
     </div>
   );

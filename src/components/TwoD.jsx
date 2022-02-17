@@ -56,9 +56,9 @@ function TwoD() {
 
   return (
     <div className="container mt-5 lg">
-      <div className="container p-5 border shadow w-50 bg-light">
+      <div className="container p-2 solid black w-50 ">
         <div className="mb-3">
-          <span style={{ color: "blue" }}>Number of Rows : </span>{" "}
+          <label style={{ color: "maroon" }}>Number of Rows : </label>
           <input
             type="text"
             id="inputPassword5"
@@ -67,7 +67,7 @@ function TwoD() {
           />
         </div>
         <div>
-          <span style={{ color: "blue" }}>Number of Columns: </span>{" "}
+          <lable style={{ color: "maroon" }}>Number of Columns: </lable>
           <input
             type="text"
             id="inputPassword5"
